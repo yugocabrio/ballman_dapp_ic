@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "bellman_icp24_backend": {
+      "candid": "src/bellman_icp24_backend/bellman_icp24_backend.did",
+      "package": "bellman_icp24_backend",
+      "type": "rust"
+    },
+    "bellman_icp24_frontend": {
+      "dependencies": [
+        "bellman_icp24_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/bellman_icp24_frontend/src/index.html"
+      },
+      "source": [
+        "src/bellman_icp24_frontend/assets",
+        "dist/bellman_icp24_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
