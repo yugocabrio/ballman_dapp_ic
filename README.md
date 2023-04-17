@@ -1,3 +1,9 @@
+# タスク
+現状のlib.rsにベタばりのコードだと"Message": "IC0503: Canister r7inp-6aaaa-aaaaa-aaabq-cai trapped explicitly: Panicked at 'wait() cannot be called from within a thread pool since that would lead to deadlocks',ということで動きません。
+そのため、とりあえず、verifyの関数だけを動かす必要があります。ballman24でシリアライズされたProofとVerificatinkeyを取り出してセットして確認を取る必要があります。
+それで行けるなら、フロントも行きましょう。無理なら無理。
+いつかこれをgithub privateにあげる
+
 # bellman_icp24
 
 Welcome to your new bellman_icp24 project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
